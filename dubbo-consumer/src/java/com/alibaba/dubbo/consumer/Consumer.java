@@ -3,6 +3,8 @@ package com.alibaba.dubbo.consumer;
 import com.alibaba.dubbo.demo.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.io.IOException;
+
 public class Consumer {
     public static void main(String[] args) {
         //测试常规服务
