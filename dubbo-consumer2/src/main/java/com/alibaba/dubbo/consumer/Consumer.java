@@ -15,7 +15,8 @@ public class Consumer {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("consumer.xml");
         context.start();
         System.out.println("consumer2 start");
-        DemoService demoService = context.getBean(DemoService.class);
+        //DemoService demoService = context.getBean(DemoService.class);
+        DemoService demoService = (DemoService)context.getBean("demoService");
         System.out.println("consumer2");
         System.out.println(demoService.getPermissions(1L));
     }
